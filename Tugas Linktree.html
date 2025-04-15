@@ -292,10 +292,17 @@
             width: 16px;
             height: 16px;
         }
+
+        .spotify-logo {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
     </style>
 </head>
 <body>
-    <div class="container text-center" style="max-width: 560px; padding-top: 50px;">
+    <div class="container text-center" style="max-width: 600px; padding-top: 50px;">
        
         <div class="mb-4 position-relative">
             <div style="position: absolute; right: 0; top: 0;">
@@ -453,11 +460,15 @@
 
               <a href="https://pubg.com/ko/events/wwrdevent" class="link-card">
                 <div class="link-card-content">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.8 4.6c-1.5-1.4-3.9-1.4-5.4 0l-1.4 1.4-1.4-1.4c-1.5-1.4-3.9-1.4-5.4 0-1.5 1.5-1.5 3.8 0 5.3l6.8 6.8 6.8-6.8c1.5-1.5 1.5-3.9 0-5.3z"/>
-                  </svg>
-                  <div class="link-card-text">PLAY Winner Winner Romantic Dinner</div>
-                </div>
+                    <div class="icon-container">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21z"/>
+                          </svg>
+                          
+                
+                    </div>
+                    <div class="link-card-text">PLAY Winner Winner Romantic Dinner</div>
+                  </div>
                 <button class="ellipsis-btn" onclick="event.stopPropagation(); openShareModal('PLAY Winner Winner Romantic Dinner', 'https://pubg.com/ko/events/wwrdevent', 'https://wstatic-prod.pubg.com/web/live/static/og/img-og-relu.jpg', '우린 마치 출구 없는 자기장처럼♥', 'https://pubg.com/ko/events/wwrdevent', '내 마음을 파밍한 그녀들, 지금 썸타러 가기!')">
                     <div class="dot"></div>
                     <div class="dot"></div>
@@ -528,10 +539,15 @@
             
             <a href="https://store.epicgames.com/en-US/p/pubg-59c1d9" class="link-card">
                 <div class="link-card-content">
-                    <img src="https://ugc.production.linktr.ee/fumSKy3RMuWv4YzrJyeg_epicgames.png?io=true&size=thumbnail-stack-v1_0" alt="Epic Games Logo" style="width: 36px; height: 36px;">
-                    <div class="link-card-text">Epic Games</div>
+                    <!-- Logo container adjusted left -->
+                    <div style="width: 32px; height: 32px; min-width: 36px; display: flex; align-items: center; justify-content: flex-start; margin-right: 6px; margin-left: -4px;">
+                        <img src="https://ugc.production.linktr.ee/fumSKy3RMuWv4YzrJyeg_epicgames.png" 
+                             alt="Epic Games Logo" 
+                             style="width: 36px; height: 36px; object-fit: contain;">
+                    </div>
+                    <div class="link-card-text" style="flex: 1; padding-left: 4px;">Epic Games</div>
                 </div>
-                <button class="ellipsis-btn" onclick="event.stopPropagation(); openShareModal('PUBG on Epic Games', 'https://store.epicgames.com/en-US/p/pubg-59c1d9', 'https://cdn1.epicgames.com/spt-assets/53ec4985296b4facbe3a8d8d019afba9/pubg-battlegrounds-1bi08.png', 'Check for platform availability and play today!', 'https://store.epicgames.com/en-US/p/pubg-59c1d9')">
+                <button class="ellipsis-btn">
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
@@ -540,18 +556,27 @@
             
 
             <a href="https://open.spotify.com/intl-id/artist/58596lUL65umS7uDFWsTdB?si=bhn2yqVoS4muJ9F_Ly3-ZQ&nd=1&dlsi=9c5c52ae30ff44ff" class="link-card">
-                <div class="link-card-content">
-                    <i class="fab fa-spotify"></i>
-                    <div class="link-card-text">Spotify Playlist</div>
+                <div class="link-card-content" style="display: flex; align-items: center;">
+                    <!-- Spotify Logo SVG - Shifted left -->
+                    <div style="margin-right: 8px; margin-left: -3px;"> <!-- Negative margin-left for left shift -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 30px; height: 36px;">
+                            <circle cx="12" cy="12" r="11" stroke="black" stroke-width="2.25" fill="transparent"/>
+                            <path fill="none" stroke="black" stroke-width="1.8" stroke-linecap="round"
+                                  d="M8 15.2c2.5-1 6.5-1 9 0"/>
+                            <path fill="none" stroke="black" stroke-width="2.2" stroke-linecap="round"
+                                  d="M6.5 12c3.5-1.5 9-1.5 12.5 0"/>
+                            <path fill="none" stroke="black" stroke-width="2.6" stroke-linecap="round"
+                                  d="M5 8.8c4.5-2 11-2 15.5 0"/>
+                        </svg>
+                    </div>
+                    <div class="link-card-text" style="flex-grow: 1;">Spotify Playlist</div>
                 </div>
-                <button class="ellipsis-btn" onclick="event.stopPropagation(); openShareModal('PUBG Spotify Playlist', 'https://open.spotify.com/intl-id/artist/58596lUL65umS7uDFWsTdB?si=bhn2yqVoS4muJ9F_Ly3-ZQ&nd=1&dlsi=9c5c52ae30ff44ff', 'https://i.scdn.co/image/ab6761610000e5ebdf2393c2a526ba53dbe89df9', '7K monthly listeners.', 'https://open.spotify.com/intl-id/artist/58596lUL65umS7uDFWsTdB?si=bhn2yqVoS4muJ9F_Ly3-ZQ&nd=1&dlsi=9c5c52ae30ff44ff')">
+                <button class="ellipsis-btn" onclick="event.stopPropagation(); openShareModal(...)">
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
                 </button>
             </a>
-        </div>
-
         
         <p class="text-muted small mt-4">* Bergabung dengan pubg_battlegrounds di Linktree</p>
      
