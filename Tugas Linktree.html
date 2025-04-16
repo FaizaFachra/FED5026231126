@@ -107,7 +107,7 @@
         
         .share-preview {
             width: 280px;
-            height: 280px; 
+            height: 280px; /* Membuat kotak persegi */
             background-color: rgb(59, 48, 42);
             border-radius: 8px;
             margin: 15px auto;
@@ -292,18 +292,11 @@
             width: 16px;
             height: 16px;
         }
-
-        .spotify-logo {
-  width: 28px;
-  height: 28px;
-  flex-shrink: 0;
-}
-
     </style>
 </head>
 <body>
     <div class="container text-center" style="max-width: 600px; padding-top: 50px;">
-       
+        
         <div class="mb-4 position-relative">
             <div style="position: absolute; right: 0; top: 0;">
                 <button class="profile-share-btn" onclick="openProfileShareModal()" aria-label="Share profile">
@@ -370,6 +363,7 @@
     </a>
 
     <!-- Discord -->
+  
 <a title="Discord" target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/battlegrounds" 
    style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; transition: transform 0.2s ease; color: white;"
    onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
@@ -393,7 +387,7 @@
                 
         </div>
 
-     
+      
         <div class="mb-1">
             <!-- Official Website -->
             <a href="https://pubg.com/en" class="link-card">
@@ -539,7 +533,7 @@
             
             <a href="https://store.epicgames.com/en-US/p/pubg-59c1d9" class="link-card">
                 <div class="link-card-content">
-                    <!-- Logo container adjusted left -->
+                   
                     <div style="width: 32px; height: 32px; min-width: 36px; display: flex; align-items: center; justify-content: flex-start; margin-right: 6px; margin-left: -4px;">
                         <img src="https://ugc.production.linktr.ee/fumSKy3RMuWv4YzrJyeg_epicgames.png" 
                              alt="Epic Games Logo" 
@@ -557,8 +551,8 @@
 
             <a href="https://open.spotify.com/intl-id/artist/58596lUL65umS7uDFWsTdB?si=bhn2yqVoS4muJ9F_Ly3-ZQ&nd=1&dlsi=9c5c52ae30ff44ff" class="link-card">
                 <div class="link-card-content" style="display: flex; align-items: center;">
-                    <!-- Spotify Logo SVG - Shifted left -->
-                    <div style="margin-right: 8px; margin-left: -3px;"> <!-- Negative margin-left for left shift -->
+                    
+                    <div style="margin-right: 8px; margin-left: -3px;"> 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 30px; height: 36px;">
                             <circle cx="12" cy="12" r="11" stroke="black" stroke-width="2.25" fill="transparent"/>
                             <path fill="none" stroke="black" stroke-width="1.8" stroke-linecap="round"
@@ -578,8 +572,11 @@
                 </button>
             </a>
         
+        </div>
+
+      
         <p class="text-muted small mt-4">* Bergabung dengan pubg_battlegrounds di Linktree</p>
-     
+      
 <div class="text-center" style="margin-top: -30px; margin-bottom: 70px; padding: 0 15px;">
     <a href="https://linktr.ee/?utm_source=linktree&utm_medium=profile&utm_campaign=footer_logo_cta&utm_content=pubg_battlegrounds" 
        target="_blank" 
@@ -610,7 +607,7 @@
 </div>
     </div>
 
-    
+  
     <div id="shareModal" class="share-modal">
         <div class="share-modal-content">
             <div style="padding: 15px; position: relative;">
